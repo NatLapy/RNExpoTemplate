@@ -14,7 +14,7 @@ export default function App() {
             Accueil: {
                 screen: Accueil,
                 options: {
-                  title: "Bienvenue",
+                    title: "Bienvenue",
                 },
                 message: "Bienvenue sur l'accueil",
             },
@@ -22,7 +22,7 @@ export default function App() {
                 screen: PageTemplate,
                 options: {
                     title: "Page 1",
-                }
+                },
             },
         },
     });
