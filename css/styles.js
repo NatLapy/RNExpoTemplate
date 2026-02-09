@@ -1,11 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-    },
+const styles = StyleSheet.create({
     carte: {
         backgroundColor: "#dd5d82",
         width: 200,
@@ -23,15 +18,64 @@ export const styles = StyleSheet.create({
         shadowRadius: 3,
     },
 
-    texte: {
-        color: "red",
-        fontSize: 20,
+    container: {
+        flex: 1,
+        backgroundColor: "#fff",
+        padding: 16,
     },
-
     titre: {
-        color: "blue",
-        fontSize: 25,
+        fontSize: 24,
         fontWeight: "bold",
+        marginBottom: 20,
         textAlign: "center",
     },
+    centre: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "rgba(0, 0, 0, 0.5)", // Fond semi-transparent pour le modal
+    },
+    modal: {
+        margin: 2,
+        width: "90%",
+        backgroundColor: "white",
+        borderRadius: 5,
+        padding: 25,
+        alignItems: "center",
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5,
+    },
+
+    titreModal: {
+        fontSize: 20,
+        fontWeight: "bold",
+        marginBottom: 20,
+    },
+    groupe: {
+        width: "100%",
+        marginBottom: 20,
+    },
+    label: {
+        fontSize: 16,
+        fontWeight: "bold",
+        marginBottom: 8,
+    },
+    input: {
+        borderWidth: 1,
+        borderColor: "#ccc",
+        borderRadius: 4,
+        padding: 8,
+    },
+    boutons: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+    },
 });
+
+export default styles;
