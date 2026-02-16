@@ -7,14 +7,22 @@ const Accueil = ({ route }) => {
     const navigation = useNavigation();
     return (
         <View>
-            <Text>{route.params?.message}</Text>
             <Button
-                title="Aller à la Page Équipe"
-                onPress={() => navigation.navigate("equipe")}
+                title="Aller à la Page Template"
+                onPress={() => navigation.navigate("pageTemplate")}
             />
             <Button
-                title="Aller à la Page 1"
-                onPress={() => navigation.navigate("Page1")}
+                title="Aller à la Page Préférences"
+                onPress={() => navigation.navigate("params")}
+            />
+            <Button
+                title="Aller à la Page Préférences 2 directement"
+                onPress={() =>
+                    navigation.navigate("params", {
+                        screen: "preferences2",
+                        params: { reinitialiser: true },
+                    })
+                }
             />
         </View>
     );
