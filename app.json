@@ -1,12 +1,11 @@
 {
   "expo": {
-    "name": "CustomBasicTemplate",
-    "slug": "CustomBasicTemplate",
-    "version": "1.1.0",
+    "name": "custom_basic_template",
+    "slug": "custom_basic_template",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -17,19 +16,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "@react-native-community/datetimepicker",
-      "expo-sqlite",
-      "expo-localization",
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-sqlite"
     ]
   }
 }
